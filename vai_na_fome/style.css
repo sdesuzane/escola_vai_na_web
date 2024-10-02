@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: purple;
+  height: 100px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  color: green;
+}
+
+.h2 {
+  color: blue;
+}
+
+img {
+  width: 200px;
+  transition: 0.5s;
+}
+
+img:hover {
+  transform: scale(1.5);
+}
+
+figure {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+figcaption {
+  text-align: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
