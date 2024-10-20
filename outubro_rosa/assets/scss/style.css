@@ -41,6 +41,9 @@ header nav ul li a {
   font-size: 18px;
 }
 
+main {
+  background-color: var(--bg-rosa-claro);
+}
 main .sobre, main .conscientizacao, main .dicas {
   display: flex;
   justify-content: space-evenly;
@@ -82,20 +85,32 @@ footer .infos span {
   font-weight: 600;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   header {
     flex-direction: column;
     align-items: center;
     height: 16vh;
   }
+  header nav {
+    width: 95%;
+  }
+  header nav ul li a {
+    font-size: 14px;
+  }
   main {
     height: 250vh;
+  }
+  main .sobre {
+    flex-direction: column-reverse;
+  }
+  main .conscientizacao {
+    flex-direction: column;
   }
   main p {
     font-size: 1rem;
   }
   main .dicas {
-    display: flex;
+    flex-direction: column;
   }
   main .dicas img {
     width: 18vw;
@@ -117,34 +132,5 @@ footer .infos span {
   }
   footer .laco img {
     width: 10vw;
-  }
-}
-@media (max-width: 500px) {
-  header {
-    height: 16vh;
-  }
-  main {
-    height: 340vh;
-  }
-  main .sobre, main .conscientizacao, main .dicas {
-    flex-direction: column;
-  }
-  main .sobre p, main .conscientizacao p, main .dicas p {
-    font-size: 0.8rem;
-  }
-  footer .icones {
-    display: flex;
-    justify-content: center;
-  }
-  footer .icones img {
-    width: 10vw;
-    display: flex;
-  }
-  footer .infos {
-    width: 70vw;
-    font-size: 12px;
-  }
-  footer .laco img {
-    width: 20vw;
   }
 }/*# sourceMappingURL=style.css.map */
