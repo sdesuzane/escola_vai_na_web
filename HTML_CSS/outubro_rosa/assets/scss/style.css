@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --bg-rosa-escuro: #ff69b4;
+  --bg-rosa-claro: #ffd9ec;
+  --text-color: #ffffff;
+}
+
+header {
+  height: 14vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--bg-rosa-escuro);
+}
+header section {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+header nav {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin-left: 68px;
+}
+header nav ul li a {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+main {
+  background-color: var(--bg-rosa-claro);
+}
+main .sobre, main .conscientizacao, main .dicas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 85vh;
+}
+main article, main .img-sobre, main .img-consc {
+  width: 40%;
+}
+main .img-sobre, main .img-consc {
+  width: 35vw;
+  height: auto;
+  box-shadow: rgb(205, 136, 223) 0px 7px 29px 0px;
+}
+main p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--bg-rosa-escuro);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(221, 51, 221, 0.2);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--bg-rosa-escuro);
+  align-items: center;
+}
+footer .icones {
+  width: 20%;
+}
+footer .icones img {
+  margin-left: 25px;
+}
+footer .infos {
+  width: 30%;
+}
+footer .infos span {
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: 16vh;
+  }
+  header nav {
+    width: 95%;
+  }
+  header nav ul li a {
+    font-size: 14px;
+  }
+  main {
+    height: 250vh;
+  }
+  main .sobre {
+    flex-direction: column-reverse;
+  }
+  main .conscientizacao {
+    flex-direction: column;
+  }
+  main p {
+    font-size: 1rem;
+  }
+  main .dicas {
+    flex-direction: column;
+  }
+  main .dicas img {
+    width: 18vw;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .icones {
+    display: flex;
+    justify-content: center;
+  }
+  footer .icones img {
+    width: 5vw;
+    display: flex;
+  }
+  footer .infos {
+    font-size: 12px;
+  }
+  footer .laco img {
+    width: 10vw;
+  }
+}/*# sourceMappingURL=style.css.map */
