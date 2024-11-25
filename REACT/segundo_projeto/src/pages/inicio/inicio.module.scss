@@ -13,3 +13,38 @@
         width: 30%;
     }
 }
+
+.porqueDoarSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75vh;
+    align-items: center;
+
+    h2 {
+        font-size: 40px;
+        color: #005695;
+        width: 92%;
+    }
+    
+}
+.divCards {
+    display: flex;
+    height: 50vh;
+    justify-content: space-evenly;
+
+    section {
+        background-color: #0157944d;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+    }
+    p {
+        font-size: 22px;
+        text-align: center;
+        width: 90%;
+    }
+}

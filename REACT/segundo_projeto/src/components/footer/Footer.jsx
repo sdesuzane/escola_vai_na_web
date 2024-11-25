@@ -1,7 +1,9 @@
+import s from './Footer.module.scss'
+
 export default function Footer() {
     return(
-        <header>
+        <footer className={s.footer}>
             <h1>Sou o footer</h1>
-        </header>
+        </footer>
     )
 }
