@@ -1,35 +1,34 @@
-import s from './inicio.module.scss'
-import img1 from '../../assets/img/101964 1balance.png'
-import img2 from '../../assets/img/2191244 1transform.png'
-import img3 from '../../assets/img/566985 1reading.png'
-import img4 from '../../assets/img/8541846 1community.png'
-
-export default function Inicio() {
+import grupoImg from "../../assets/img/grupoImg.png"
+import lendoImg from "../../assets/img/lendoImg.png"
+import punhoImg from "../../assets/img/punhoImg.png"
+import balancaImg from "../../assets/img/balancaImg.png"
+import s from "./inicio.module.scss"
+export default function Inicio(){
     return(
         <main>
-            <section className={s.primeiraSessaoInicio}>
+            <section className={s.introducaoInicio}>
                 <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
             </section>
-            <section className={s.porqueDoarSection}>
+            <section className={s.motivosDoacao}>
                 <h2>Por que devo doar?</h2>
-                <div className={s.divCards}>
-                    <section>
-                        <img src={img4} alt="Imagem ilustrando circulo social de 4 pessoas" />
-                        <p>Oferece livros a quem não tem acesso, ajudando a reduzir a exclusão social.</p>
-                        </section>
-                    <section>
-                        <img src={img3} alt="Imagem ilustrando pessoa lendo" />
-                        <p>Estimula o hábito da leitura e o aprendizado contínuo.</p>
-                        </section>
-                    <section>
-                        <img src={img2} alt="Imagem ilustrando maos" />
-                        <p>Fornece conhecimento e inspiração, permitindo que indivíduos transformem suas vidas.</p>
-                    </section>
-                    <section>
-                        <img src={img1} alt="Imagem ilustrando uma balanca" />
-                        <p>Garante que todos, independentemente de sua condição, tenham oportunidades de aprendizado.</p>
-                    </section>
-                </div>
+                <section className={s.listaMotivos}>
+                    <figure className={s.motivoSolo}>
+                        <img src={grupoImg} alt="Imagem possui 4 pessoas e elas se conectam por um círculo."/>
+                        <figcaption>Oferece livros a quem não tem acesso, ajudando a reduzir a exclusão social.</figcaption>
+                    </figure>
+                    <figure className={s.motivoSolo}>
+                        <img src={lendoImg} alt="Imagem apresenta uma pessoa lendo um livro."/>
+                        <figcaption>Estimula o hábito da leitura e o aprendizado contínuo.</figcaption>
+                    </figure>
+                    <figure className={s.motivoSolo}>
+                        <img src={punhoImg} alt="Imagem possui um punho erguido dentro de um círculo. Embaixo tem 6 pessoas conectadas ao círculo com o punho."/>
+                        <figcaption>Fornece conhecimento e inspiração, permitindo que indivíduos transformem suas vidas.</figcaption>
+                    </figure>
+                    <figure className={s.motivoSolo}>
+                        <img src={balancaImg} alt="Imagem de uma balança."/>
+                        <figcaption>Garante que todos, independentemente de sua condição, tenham oportunidades de aprendizado.</figcaption>
+                    </figure>
+                </section>
             </section>
         </main>
     )
