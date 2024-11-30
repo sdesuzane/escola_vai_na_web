@@ -1,67 +1,87 @@
-* {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
-    padding: 10px;
+    height: 12vh;
+    background: linear-gradient(to right, #001B2F, #005695);
 }
 .logoHeader {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 20%;
-
-    h1 {
-        font-size: 20px;
-        color: #fff;
-    }
+    width: 20vw;
+    height: 10vh;
+}
+.logoImg {
+    margin-bottom: 15px;
+    width: 15%;
+}
+.h1Header {
+    font-size: 1.8vw;
 }
 .navHeader {
-    width: 30%;
-
-    ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .link {
-        color: #fff;
-        font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-    }
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 35vw;
 }
-.buscarHeader {
-    width: 20%;
-    height: 4vh;
+.link {
+    text-decoration: none;
+    font-size: 1vw;
+}
+.barraPesquisa {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid #fff;
-    border-radius: 20px;
-
+    width: 15vw;
+    height: 35%;
+    border: solid white 2px;
+    border-radius: 50px;
     input {
-        background-color: transparent;
+        height: 100%;
+        width: 70%;
+        text-decoration: none;
         border: none;
-        width: 60%;
-
+        background-color: transparent;
         &::placeholder {
-            color: #fff;
+            color: white;
+            font-size: 1.5vh;
         }
     }
-
     button {
         background-color: transparent;
         border: none;
-        cursor: pointer;
+        &:hover {
+            cursor: pointer;
+        }
     }
-
+}
+.lupaPesquisa {
+    height: 1.9vh;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: 8vh;
+    }
+    .logoHeader {
+        width: 50vw;
+    }
+    .logoImg {
+        margin-bottom: 0px;
+        width: 15%;
+    }
+    .h1Header {
+        font-size: 3vw;
+    }
+    .navHeader {
+        width: 95vw;
+    }
+    .barraPesquisa {
+        display: none;
+    }
+    .link {
+        font-size: 3vw;
+    }
 }
