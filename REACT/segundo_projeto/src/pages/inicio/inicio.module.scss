@@ -1,50 +1,48 @@
-.primeiraSessaoInicio {
-    height: 75vh;
-    background-image: url('../../assets/img/rede_doacao.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+.introducaoInicio {
     display: flex;
     align-items: center;
-    padding-left: 6%;
-
+    height: 45vh;
+    background-image: url("../../assets/img/backgroundInicio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     h2 {
-        color: #fff;
-        font-size: 32px;
-        width: 30%;
+        width: 22%;
+        margin-left: 10%;
+        font-size: 2vw;
     }
 }
-
-.porqueDoarSection {
+.motivosDoacao {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 75vh;
     align-items: center;
-
+    height: 55vh;
     h2 {
-        font-size: 40px;
         color: #005695;
-        width: 92%;
+        width: 84%;
     }
-    
 }
-.divCards {
+.listaMotivos {
     display: flex;
-    height: 50vh;
     justify-content: space-evenly;
-
-    section {
-        background-color: #0157944d;
-        width: 20%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        border-radius: 10px;
+    height: 75%;
+}
+.motivoSolo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+    height: 80%;
+    border-radius: 10%;
+    background-color: #0157944D;
+    img {
+        width: 28%;
     }
-    p {
-        font-size: 22px;
+    figcaption {
+        width: 85%;
+        font-size: 1.15vw;
+        color: black;
         text-align: center;
-        width: 90%;
     }
 }
