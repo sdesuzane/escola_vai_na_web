@@ -1,35 +1,25 @@
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 15vh;
-    background-color: #005695;
-}
 .contactFooter {
+    background-color: #005695;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
+    padding: 0 3%;
     align-items: center;
-    height: 64%;
-    padding-left: 10%;
-    padding-right: 10%;
-    p {
-        font-size: 1.5vh;
+    color: #fff;
+    nav {
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
-.redeSociais {
-    display: flex;
-    justify-content: space-between;
-    width: 13vw;
-}
 .copyright {
+    height: 8vh;
+    color: #fff;
+    background-color: #232020;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 36%;
-    background-color: #232020;
-    p {
-        font-size: 1.75vh;
-    }
 }
 
 @media (max-width: 780px) {
@@ -38,9 +28,6 @@
         justify-content: space-evenly;
         nav {
             width: 60%;
-        }
-        .redeSociais {
-            gap: 1.5vw;
         }
     }
     .copyright {

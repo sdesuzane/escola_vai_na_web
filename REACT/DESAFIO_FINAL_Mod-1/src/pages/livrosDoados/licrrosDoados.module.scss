@@ -5,6 +5,7 @@
     align-items: center;
     height: 75vh;
     h2 {
+        font-size: 32px;
         color: black;
     }
 }
@@ -17,8 +18,8 @@
         justify-content: space-around;
         align-items: center;
         width: 12%;
-        height: 40%;
-        border: solid #005695 2px;
+        height: 50%;
+        border: solid 3px #005695;
         border-radius: 15px;
         img {
             height: 50%;
@@ -26,11 +27,11 @@
         div {
             text-align: center;
             h3 {
-                font-size: 1.5vh;
+                font-size: 14px;
                 color:black;
             }
             p {
-                font-size: 1.5vh;
+                font-size: 12px;
                 color: black;
             }
         }
