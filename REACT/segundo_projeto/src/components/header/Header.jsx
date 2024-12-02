@@ -5,31 +5,34 @@ import Inicio from "../../pages/inicio/inicio"
 import LivrosDoados from "../../pages/livrosDoados/livrosDoados"
 import QueroDoar from "../../pages/queroDoar/queroDoar"
 import s from "./header.module.scss"
+
 export default function Header(){
     return(
+
         <BrowserRouter>
-            <header className={s.header}>
-                <section className={s.logoHeader}>
-                    <img className={s.logoImg} src={mainLogo} alt="Ícone de um livro aberto. É a logo do site."/>
-                    <h1 className={s.h1Header}>Livros Vai na Web</h1>
-                </section>
-                <nav>
-                    <ul className={s.navHeader}>
-                        <li><Link className={s.link} to="/">Inicio</Link></li>
-                        <li><Link className={s.link}to="/livros_doados">Livros Doados</Link></li>
-                        <li><Link className={s.link} to="/quero_doar">Quero Doar</Link></li>
-                    </ul>
-                </nav>
-                <section className={s.barraPesquisa}>
-                    <input type="search" name="" id="" placeholder="O que você procura?"/>
-                    <button><img className={s.lupaPesquisa} src={lupinhaBarra} alt="Ícone de uma lupa, clicando nele você vai começar a busca pelo item digitado na barra de busca."/></button>
-                </section>
-            </header>
-            <Routes>
+        <header className={s.header}>
+            <section className={s.logoHeader}>
+                <img src={mainLogo} alt="Imagem de ilustração de livro com capa azul aberto." />
+                <h1>Livros Vai na Web</h1>
+            </section>
+            <nav className={s.navHeader}>
+                <ul>
+                    <li><Link className={s.link} to='/'>Início</Link></li>
+                    <li><Link className={s.link} to='/livros_doados'>Livros Doados</Link></li>
+                    <li><Link className={s.link} to='/quero_doar'>Quero Doar</Link></li>
+                </ul>
+            </nav>
+            <section className={s.barraPesquisa}>
+                <input type="search" name="" id="" placeholder='O que você procura?'/>
+                <button><img src={lupinhaBarra} alt="Imagem de lupa branca" /></button>
+            </section>
+        </header>
+        <Routes>
                 <Route path="/" element={<Inicio/>}/>
                 <Route path="/livros_doados" element={<LivrosDoados/>}/>
                 <Route path="/quero_doar" element={<QueroDoar/>}/>
             </Routes>
+
         </BrowserRouter>
     )
 }

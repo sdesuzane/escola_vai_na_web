@@ -5,7 +5,7 @@
     height: 15vh;
     background-color: #005695;
 }
-.emCima {
+.contactFooter {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,12 +16,12 @@
         font-size: 1.5vh;
     }
 }
-.redes {
+.redeSociais {
     display: flex;
     justify-content: space-between;
     width: 13vw;
 }
-.emBaixo {
+.copyright {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,5 +29,25 @@
     background-color: #232020;
     p {
         font-size: 1.75vh;
+    }
+}
+
+@media (max-width: 780px) {
+    .contactFooter {
+        flex-direction: column;
+        justify-content: space-evenly;
+        nav {
+            width: 60%;
+        }
+        .redeSociais {
+            gap: 1.5vw;
+        }
+    }
+    .copyright {
+        p {
+            font-size: 12px;
+            width: 60%;
+            text-align: center;
+        }
     }
 }

@@ -1,5 +1,6 @@
 import livroAberto from "../../assets/img/livroAberto.png"
 import s from "./queroDoar.module.scss"
+
 export default function QueroDoar(){
     return(
         <main className={s.mainQueroDoar}>
