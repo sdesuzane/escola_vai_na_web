@@ -60,28 +60,19 @@
 .lupaPesquisa {
     height: 1.9vh;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 768px){
     .header {
         flex-direction: column;
-        height: 8vh;
+        justify-content: space-evenly;
     }
     .logoHeader {
-        width: 50vw;
-    }
-    .logoImg {
-        margin-bottom: 0px;
-        width: 15%;
-    }
-    .h1Header {
-        font-size: 3vw;
+        width: 90%;
     }
     .navHeader {
-        width: 95vw;
+        width: 95%;
     }
-    .barraPesquisa {
+    .barraDeBusca{
         display: none;
-    }
-    .link {
-        font-size: 3vw;
     }
 }

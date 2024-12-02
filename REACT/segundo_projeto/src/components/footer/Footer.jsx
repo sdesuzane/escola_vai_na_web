@@ -7,10 +7,10 @@ import s from "./footer.module.scss"
 export default function Footer(){
     return(
         <footer className={s.footer}>
-            <section className={s.emCima}>
+            <section className={s.contactFooter}>
                 <p>4002-8922</p>
                 <nav>
-                    <ul className={s.redes}>
+                    <ul className={s.redeSociais}>
                         <li><a href=""><img src={facebookIcon} alt="Ícone do facebook, clique aqui para acessar nossa pagina no facebook."/></a></li>
                         <li><a href=""><img src={twitterIcon} alt="Ícone do twitter, clique aqui para acessar nossa pagina no twitter."/></a></li>
                         <li><a href=""><img src={youtubeIcon} alt="Ícone do youtube, clique aqui para acessar nosso canal do youtube."/></a></li>
@@ -19,7 +19,7 @@ export default function Footer(){
                     </ul>
                 </nav>
             </section>
-            <section className={s.emBaixo}>
+            <section className={s.copyright}>
                 <p>Layout desenvolvido pela Vai Na Web para fins educativos - 2024</p>
             </section>
         </footer>
