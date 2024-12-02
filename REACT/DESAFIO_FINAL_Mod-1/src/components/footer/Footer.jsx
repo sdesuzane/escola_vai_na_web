@@ -10,13 +10,11 @@ export default function Footer(){
             <section className={s.contactFooter}>
                 <p>4002-8922</p>
                 <nav>
-                    <ul className={s.redeSociais}>
-                        <li><a href=""><img src={facebookIcon} alt="Ícone do facebook, clique aqui para acessar nossa pagina no facebook."/></a></li>
-                        <li><a href=""><img src={twitterIcon} alt="Ícone do twitter, clique aqui para acessar nossa pagina no twitter."/></a></li>
-                        <li><a href=""><img src={youtubeIcon} alt="Ícone do youtube, clique aqui para acessar nosso canal do youtube."/></a></li>
-                        <li><a href=""><img src={linkedInIcon} alt="Ícone do linkedIn, clique aqui para acessar nossa pagina no linkedIn."/></a></li>
-                        <li><a href=""><img src={instagramIcon} alt="Ícone do instagram, clique aqui para acessar nossa pagina no instagram."/></a></li>
-                    </ul>
+                    <a href=""><img src={facebookIcon} alt="Imagem branca da logo do Facebook" /></a>
+                    <a href=""><img src={twitterIcon} alt="Imagem branca da logo do Twitter" /></a>
+                    <a href=""><img src={youtubeIcon} alt="Imagem branca da logo do Youtube" /></a>
+                    <a href=""><img src={linkedInIcon} alt="Imagem branca da logo do Linkedin" /></a>
+                    <a href=""><img src={instagramIcon} alt="Imagem branca da logo do Instagram" /></a>
                 </nav>
             </section>
             <section className={s.copyright}>

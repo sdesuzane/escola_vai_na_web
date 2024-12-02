@@ -1,64 +1,64 @@
 .header {
+    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 12vh;
-    background: linear-gradient(to right, #001B2F, #005695);
+    height: 20vh;
 }
 .logoHeader {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    width: 20vw;
-    height: 10vh;
-}
-.logoImg {
-    margin-bottom: 15px;
-    width: 15%;
-}
-.h1Header {
-    font-size: 1.8vw;
+    width: 25%;
+
+    h1 {
+        font-size: 25px;
+        color: #FFF;
+    }
 }
 .navHeader {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-    width: 35vw;
-}
-.link {
-    text-decoration: none;
-    font-size: 1vw;
+    width: 30%;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+
+    .link {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+    }
 }
 .barraPesquisa {
+    border: solid #FFF;
+    width: 20%;
+    height: 6vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 15vw;
-    height: 35%;
-    border: solid white 2px;
-    border-radius: 50px;
+    border-radius: 20px;
+    margin-right: 1%;
+
     input {
-        height: 100%;
-        width: 70%;
-        text-decoration: none;
-        border: none;
         background-color: transparent;
-        &::placeholder {
-            color: white;
-            font-size: 1.5vh;
+        border: none;
+        width: 70%;
+        height: 5vh;
+
+        &::placeholder{
+            color: #FFF;
+            font-size: 15px;
         }
     }
+
     button {
         background-color: transparent;
         border: none;
-        &:hover {
-            cursor: pointer;
-        }
+        cursor: pointer;
     }
-}
-.lupaPesquisa {
-    height: 1.9vh;
 }
 
 @media (max-width: 768px){
@@ -72,7 +72,7 @@
     .navHeader {
         width: 95%;
     }
-    .barraDeBusca{
+    .barraPesquisa{
         display: none;
     }
 }
