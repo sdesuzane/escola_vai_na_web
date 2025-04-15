@@ -1,20 +1,36 @@
 import livroProtagonista from "../../assets/img/livroProtagonista.png"
 import s from "./licrrosDoados.module.scss"
+import axios from 'axios'
+import {useState,useEffect} from 'react'
+
 export default function LivrosDoados(){
+
+    const [livros,setLivros] = useState([])
+
+    const getLivros = async() => {
+       const resposta = await axios.get('https://api-vainaweb.onrender.com/livros') 
+       setLivros(resposta.data)
+    }
+
+    useEffect(()=>{
+        getLivros()
+    },[])
+
     return(
-        <main className={s.mainLivrosDoados}>
+        <section className={s.mainLivrosDoados}>
             <h2>Livros Doados</h2>
             <section className={s.listaLivros}>
-                <section>
-                    <img src={livroProtagonista} alt="Imagem meramente ilustrativa do livro Protagonista."/>
-                    <div>
-                        <h3>Protagonista</h3>
-                        <p>Susanne Andrade</p>
-                        <p>Ficção</p>
-                    </div>
-                </section>
-                {/*TODO: adicionar outros livros*/}
+                {
+                    livros.map((item)=>(
+                        <section>
+                            <img src={item.imagem_url} alt={`Titulo do livro ${item.titulo}`} />
+                            <h3>{item.titulo}</h3>
+                            <p>{item.autor}</p>
+                            <p>{item.categoria}</p>
+                        </section>
+                    )) 
+                    }
             </section>
-        </main>
+        </section>
     )
 }
