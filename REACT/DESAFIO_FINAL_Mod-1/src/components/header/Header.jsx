@@ -13,7 +13,7 @@ export default function Header(){
         <header className={s.header}>
             <section className={s.logoHeader}>
                 <img src={mainLogo} alt="Imagem de ilustração de livro com capa azul aberto." />
-                <h1>Livros Vai na Web</h1>
+                <h1>Doação de Livros</h1>
             </section>
             <nav className={s.navHeader}>
                 <ul>

@@ -13,12 +13,12 @@ export default function Footer(){
                     <a href=""><img src={facebookIcon} alt="Imagem branca da logo do Facebook" /></a>
                     <a href=""><img src={twitterIcon} alt="Imagem branca da logo do Twitter" /></a>
                     <a href=""><img src={youtubeIcon} alt="Imagem branca da logo do Youtube" /></a>
-                    <a href=""><img src={linkedInIcon} alt="Imagem branca da logo do Linkedin" /></a>
-                    <a href=""><img src={instagramIcon} alt="Imagem branca da logo do Instagram" /></a>
+                    <a href="https://www.linkedin.com/in/mariasuzane/" target="_blank"><img src={linkedInIcon} alt="Imagem branca da logo do Linkedin" /></a>
+                    <a href="https://www.instagram.com/sdesuzane/" target="_blank"><img src={instagramIcon} alt="Imagem branca da logo do Instagram" /></a>
                 </nav>
             </section>
             <section className={s.copyright}>
-                <p>Layout desenvolvido pela Vai Na Web para fins educativos - 2024</p>
+                <p>Layout desenvolvido para fins educativos - 2024</p>
             </section>
         </footer>
     )
