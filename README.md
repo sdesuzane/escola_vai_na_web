@@ -2,7 +2,9 @@
 
 <h3> REACT:</h3>
 
-- [DESAFIO FINAL - Módulo 01](REACT/DESAFIO_FINAL_Mod-1/)
+- [DESAFIO FINAL](REACT/DESAFIO_FINAL_Mod-1/)
+
+- link do deploy: https://escola-vai-na-web.vercel.app/
 
 <img alt="image da pagina de inicio do desafio react" width="400px" height="200px" src="img/react.png">&nbsp;
 <img alt="image da pagina de inicio do desafio react" width="400px" height="200px" src="img/react2.png">&nbsp;

@@ -8,7 +8,7 @@ export default function QueroDoar(){
     const [titulo,setTitulo] = useState("")
     const [categoria,setCategoria] = useState("")
     const [autor,setAutor] = useState("")
-    const [imagem_url,setImage_Url] = useState("")
+    const [image_url,setImage_Url] = useState("")
     
     const capturaTitulo = (e) =>{
         setTitulo(e.target.value)
@@ -31,9 +31,8 @@ export default function QueroDoar(){
             titulo,
             categoria,
             autor,
-            imagem_url
+            image_url
         }
-        console.log(dadosPEnviar)
         await axios.post("https://api-vainaweb.onrender.com/doar",dadosPEnviar)
     }
 

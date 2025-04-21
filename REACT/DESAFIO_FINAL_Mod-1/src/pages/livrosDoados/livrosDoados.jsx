@@ -23,7 +23,7 @@ export default function LivrosDoados(){
                 {
                     livros.map((item)=>(
                         <section>
-                            <img src={item.imagem_url} alt={`Titulo do livro ${item.titulo}`} />
+                            <img src={item.image_url} alt={`Titulo do livro ${item.titulo}`} />
                             <h3>{item.titulo}</h3>
                             <p>{item.autor}</p>
                             <p>{item.categoria}</p>
