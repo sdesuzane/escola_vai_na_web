@@ -18,7 +18,7 @@ export default function Footer(){
                 </nav>
             </section>
             <section className={s.copyright}>
-                <p>Layout desenvolvido pela Vai Na Web para fins educativos - 2024</p>
+                <p>Layout desenvolvido para fins educativos - 2024</p>
             </section>
         </footer>
     )
