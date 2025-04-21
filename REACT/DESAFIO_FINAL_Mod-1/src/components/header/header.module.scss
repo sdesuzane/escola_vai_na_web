@@ -33,7 +33,7 @@
     }
 }
 .barraPesquisa {
-    border: solid #FFF;
+    border: 1px solid #FFF;
     width: 20%;
     height: 6vh;
     display: flex;
@@ -51,6 +51,9 @@
         &::placeholder{
             color: #FFF;
             font-size: 15px;
+        }
+        &:focus {
+            outline: none;
         }
     }
 
