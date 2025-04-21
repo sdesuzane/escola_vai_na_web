@@ -13,8 +13,8 @@ export default function Footer(){
                     <a href=""><img src={facebookIcon} alt="Imagem branca da logo do Facebook" /></a>
                     <a href=""><img src={twitterIcon} alt="Imagem branca da logo do Twitter" /></a>
                     <a href=""><img src={youtubeIcon} alt="Imagem branca da logo do Youtube" /></a>
-                    <a href=""><img src={linkedInIcon} alt="Imagem branca da logo do Linkedin" /></a>
-                    <a href=""><img src={instagramIcon} alt="Imagem branca da logo do Instagram" /></a>
+                    <a href="https://www.linkedin.com/in/mariasuzane/" target="_blank"><img src={linkedInIcon} alt="Imagem branca da logo do Linkedin" /></a>
+                    <a href="https://www.instagram.com/sdesuzane/" target="_blank"><img src={instagramIcon} alt="Imagem branca da logo do Instagram" /></a>
                 </nav>
             </section>
             <section className={s.copyright}>
